@@ -1,5 +1,5 @@
-# استخدام صورة PHP مع Apache
 FROM php:7.4-apache
 
-# نسخ جميع ملفات المشروع داخل الخادم
+RUN docker-php-ext-install mysqli
+
 COPY . /var/www/html/
