@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>🌿 تحليل البشرة</title>
+    <link rel="stylesheet" href="skin-analysis.css">
+    <script src="skin-analysis.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>✨ تحليل نوع بشرتكِ ✨</h1>
+    </header>
+
+    <main>
+        <div class="analysis-card">
+            <h2>💧 كيف تشعر بشرتكِ عند الاستيقاظ؟</h2>
+            <label><input type="radio" name="morningFeel" value="جافة"> جافة ومشدودة</label>
+            <label><input type="radio" name="morningFeel" value="دهنية"> دهنية ولامعة</label>
+            <label><input type="radio" name="morningFeel" value="مختلطة"> دهنية في بعض المناطق وجافة في الأخرى</label>
+            <label><input type="radio" name="morningFeel" value="عادية"> طبيعية ومتوازنة</label>
+        </div>
+
+        <div class="analysis-card">
+            <h2>🌞 كيف تتفاعل بشرتكِ مع الشمس؟</h2>
+            <label><input type="radio" name="sunReaction" value="تحترق بسرعة"> تحترق بسرعة وتصبح حمراء</label>
+            <label><input type="radio" name="sunReaction" value="تسمر بسهولة"> تسمر بسهولة دون الاحتراق</label>
+            <label><input type="radio" name="sunReaction" value="تتحسس"> تتحسس وتظهر بقع حمراء</label>
+        </div>
+
+        <div class="analysis-card">
+            <h2>🧼 كيف تبدو مسام بشرتكِ؟</h2>
+            <label><input type="radio" name="poresSize" value="كبيرة"> واضحة وكبيرة</label>
+            <label><input type="radio" name="poresSize" value="متوسطة"> مرئية لكن ليست بارزة</label>
+            <label><input type="radio" name="poresSize" value="صغيرة"> غير واضحة تقريبًا</label>
+        </div>
+
+        <div class="analysis-card">
+    <h2>🌬️ هل تعاني بشرتكِ من الجفاف في الشتاء؟</h2>
+    <label><input type="radio" name="winterDryness" value="نعم"> نعم، بشرتي تصبح جافة جدًا</label>
+    <label><input type="radio" name="winterDryness" value="لا"> لا، تبقى متوازنة</label>
+</div>
+
+<div class="analysis-card">
+    <h2>🛁 كيف تبدو بشرتكِ بعد الاستحمام؟</h2>
+    <label><input type="radio" name="afterShower" value="جافة"> تصبح جافة ومشدودة</label>
+    <label><input type="radio" name="afterShower" value="دهنية"> تبقى دهنية ومرطبة</label>
+    <label><input type="radio" name="afterShower" value="عادية"> تبقى طبيعية</label>
+</div>
+
+<div class="analysis-card">
+    <h2>🧴 ما أهم خطوة في روتين العناية بالبشرة بالنسبة لكِ؟</h2>
+    <label><input type="radio" name="skincareRoutine" value="ترطيب"> الترطيب</label>
+    <label><input type="radio" name="skincareRoutine" value="تنظيف"> تنظيف البشرة</label>
+    <label><input type="radio" name="skincareRoutine" value="مقاومة التجاعيد"> مقاومة التجاعيد</label>
+    <label><input type="radio" name="skincareRoutine" value="تقليل المسام"> تقليل المسام والبثور</label>
+</div>
+
+<div class="analysis-card">
+    <h2>🌿 هل تتحسس بشرتكِ من المنتجات الجديدة؟</h2>
+    <label><input type="radio" name="productSensitivity" value="نعم"> نعم، غالبًا تظهر احمرار أو بثور</label>
+    <label><input type="radio" name="productSensitivity" value="لا"> لا، لا تتأثر كثيرًا</label>
+</div>
+
+<div class="analysis-card">
+    <h2>💦 كيف تمتص بشرتكِ الكريمات المرطبة؟</h2>
+    <label><input type="radio" name="moisturizerAbsorption" value="سريع"> تمتصه بسرعة دون ترك أثر</label>
+    <label><input type="radio" name="moisturizerAbsorption" value="متوسط"> يمتص تدريجياً ويترك إحساسًا مرطبًا</label>
+    <label><input type="radio" name="moisturizerAbsorption" value="بطيء"> يبقى على سطح البشرة لفترة</label>
+</div>
+
+<div class="analysis-card">
+    <h2>🌞 كيف تتفاعل بشرتكِ مع الحرارة والرطوبة؟</h2>
+    <label><input type="radio" name="heatReaction" value="تعرق بشكل زائد"> تصبح دهنية ومليئة بالزيوت</label>
+    <label><input type="radio" name="heatReaction" value="عادية"> لا تتأثر كثيرًا</label>
+</div>
+
+<button onclick="getSkinType()">🔍 تحليل بشرتي</button>
+        <div id="result" class="hidden">
+            <h2>✨ نوع بشرتكِ هو:</h2>
+            <p id="skinResultText"></p>
+        </div>
+    </main>
+    <script src="skin-analysis.js"></script>
+</body>
+</html>
