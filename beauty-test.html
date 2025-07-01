@@ -1,159 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <title>اختبار الجمال</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="beauty-test-container">
-        <h2>✨ اختبار الجمال</h2>
-        <p>أجيبي على الأسئلة لمعرفة المنتجات المناسبة لكِ!</p>
-
-        <form id="beauty-form">
-            <div class="question-block">
-                <label>💆‍♀️ ما نوع بشرتكِ؟</label>
-                <select id="skin-type">
-                    <option value="جافة">جافة</option>
-                    <option value="دهنية">دهنية</option>
-                    <option value="مختلطة">مختلطة</option>
-                    <option value="حساسة">حساسة</option>
-                </select>
-            </div>
-
-            <div class="question-block">
-                <label>💦 هل تشعرين بجفاف البشرة خلال اليوم؟</label>
-                <select id="hydration-level">
-                    <option value="دائمًا">دائمًا</option>
-                    <option value="أحيانًا">أحيانًا</option>
-                    <option value="نادراً">نادراً</option>
-                </select>
-            </div>
-
-            <div class="question-block">
-                <label>☀️ كم مرة تتعرضين لأشعة الشمس؟</label>
-                <select id="sun-exposure">
-                    <option value="يوميًا">يوميًا</option>
-                    <option value="أحيانًا">أحيانًا</option>
-                    <option value="نادراً">نادراً</option>
-                </select>
-            </div>
-
-            <div class="question-block">
-                <label>🧴 كم مرة تستخدمين واقي الشمس؟</label>
-                <select id="sunscreen-use">
-                    <option value="يوميًا">يوميًا</option>
-                    <option value="أحيانًا">أحيانًا</option>
-                    <option value="نادراً">نادراً</option>
-                </select>
-            </div>
-
-            <div class="question-block">
-                <label>💤 كم عدد ساعات النوم التي تحصلين عليها يوميًا؟</label>
-                <select id="sleep-hours">
-                    <option value="أقل من 5 ساعات">أقل من 5 ساعات</option>
-                    <option value="5-7 ساعات">5-7 ساعات</option>
-                    <option value="أكثر من 7 ساعات">أكثر من 7 ساعات</option>
-                </select>
-            </div>
-
-            <div class="question-block">
-                <label>💄 كم مرة تستخدمين المكياج أسبوعيًا؟</label>
-                <select id="makeup-frequency">
-                    <option value="يوميًا">يوميًا</option>
-                    <option value="3-4 مرات أسبوعيًا">3-4 مرات أسبوعيًا</option>
-                    <option value="نادراً">نادراً</option>
-                    <option value="لا أستخدم المكياج">لا أستخدم المكياج</option>
-                </select>
-            </div>
-
-            <div class="question-block">
-                <label>🍂 هل تعانين من تصبغات أو بقع داكنة؟</label>
-                <select id="dark-spots">
-                    <option value="نعم، بشكل واضح">نعم، بشكل واضح</option>
-                    <option value="أحيانًا">أحيانًا</option>
-                    <option value="لا، بشرتي متجانسة">لا، بشرتي متجانسة</option>
-                </select>
-            </div>
-
-            <div class="question-block">
-                <label>💆‍♀️ هل تشعرين أن بشرتك تفقد نضارتها؟</label>
-                <select id="skin-brightness">
-                    <option value="نعم، أحتاج لمنتجات تعيد إشراق بشرتي">نعم، أحتاج لمنتجات تعيد إشراق بشرتي</option>
-                    <option value="أحيانًا">أحيانًا</option>
-                    <option value="لا، بشرتي مشرقة طبيعيًا">لا، بشرتي مشرقة طبيعيًا</option>
-                </select>
-            </div>
-
-            <div class="question-block">
-                <label>😌 هل تشعرين بالإجهاد أو التوتر المستمر؟</label>
-                <select id="stress-level">
-                    <option value="نعم، باستمرار">نعم، باستمرار</option>
-                    <option value="أحيانًا">أحيانًا</option>
-                    <option value="نادراً">نادراً</option>
-                </select>
-            </div>
-
-            <div class="question-block">
-                <label>🧘‍♀️ هل تستخدمين تقنيات الاسترخاء مثل التأمل أو اليوغا؟</label>
-                <select id="relaxation-methods">
-                    <option value="نعم، بانتظام">نعم، بانتظام</option>
-                    <option value="أحيانًا">أحيانًا</option>
-                    <option value="نادراً">نادراً</option>
-                </select>
-            </div>
-
-            <div class="question-block">
-    <label>👁️ هل تعانين من الهالات السوداء؟</label>
-    <select id="dark-circles">
-        <option value="نعم، بشكل واضح">نعم، بشكل واضح</option>
-        <option value="أحيانًا، حسب الإرهاق">أحيانًا، حسب الإرهاق</option>
-        <option value="لا، بشرتي موحدة حول العينين">لا، بشرتي موحدة حول العينين</option>
-    </select>
-</div>
-
-<div class="question-block">
-    <label>🧴 هل تعانين من فقدان مرونة البشرة؟</label>
-    <select id="skin-elasticity">
-        <option value="نعم، أحتاج منتجات شد البشرة">نعم، أحتاج منتجات شد البشرة</option>
-        <option value="أحيانًا، عند الشعور بالتعب">أحيانًا، عند الشعور بالتعب</option>
-        <option value="لا، بشرتي مشدودة بشكل طبيعي">لا، بشرتي مشدودة بشكل طبيعي</option>
-    </select>
-</div>
-
-<div class="question-block">
-    <label>🛍️ هل تحتارين عند اختيار منتجات العناية؟</label>
-    <select id="product-selection">
-        <option value="نعم، أحتاج توصيات دقيقة">نعم، أحتاج توصيات دقيقة</option>
-        <option value="أحيانًا، أجد بعض المنتجات مفيدة">أحيانًا، أجد بعض المنتجات مفيدة</option>
-        <option value="لا، أعرف بالضبط ما يناسبني">لا، أعرف بالضبط ما يناسبني</option>
-    </select>
-</div>
-
-<div class="question-block">
-    <label>🌞 كيف تبدو بشرتك في الصباح؟</label>
-    <select id="morning-skin">
-        <option value="متعبة وباهتة">متعبة وباهتة</option>
-        <option value="متوازنة ونضرة">متوازنة ونضرة</option>
-        <option value="دهنية أو لامعة">دهنية أو لامعة</option>
-    </select>
-</div>
-
-<div class="question-block">
-    <label>🔥 هل تعانين من البثور أو حب الشباب؟</label>
-    <select id="acne">
-        <option value="نعم، بشكل مستمر">نعم، بشكل مستمر</option>
-        <option value="أحيانًا، عند تغير الطقس أو الإجهاد">أحيانًا، عند تغير الطقس أو الإجهاد</option>
-        <option value="نادراً، بشرتي صافية">نادراً، بشرتي صافية</option>
-    </select>
-</div>
-
-            <button type="button" onclick="getBeautyRecommendation()">🔍 اكتشف المنتجات المناسبة لكِ!</button>
-        </form>
-
-        <div id="beauty-results"></div>
-    </div>
-</body>
-</html>
