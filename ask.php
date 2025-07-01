@@ -1,6 +1,8 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json');
-$userInput = $_POST['message'] ?? '';
+
+$userInput = $_GET['q'] ?? '';
 
 if (!$userInput) {
   echo json_encode(['error' => '⚠️ لم يتم تلقي أي سؤال.']);
@@ -18,7 +20,7 @@ $data = [
 $options = [
   'http' => [
     'header'  => [
-     "Authorization: Bearer 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",
+      "Authorization: Bearer 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",
       "Content-Type: application/json",
       "X-Title: Royale Assistant"
     ],
@@ -29,4 +31,5 @@ $options = [
 
 $context  = stream_context_create($options);
 $result = file_get_contents("https://openrouter.ai/api/v1/chat/completions", false, $context);
+
 echo $result ?: json_encode(['error' => '❌ لم يتم تلقي استجابة.']);
